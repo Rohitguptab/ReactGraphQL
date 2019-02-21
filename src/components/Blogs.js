@@ -16,7 +16,7 @@ const BLOGQUERY = gpl`
 export class Blogs extends Component {
   render() {
     return (
-      <Fragment>
+      <div>
         <div className="container">
           <ul className="list-group">
             <Query query={BLOGQUERY}>
@@ -25,17 +25,17 @@ export class Blogs extends Component {
                 if (error) console.log(error);
 
                 return (
-                  <Fragment>
+                  <div>
                     {data.Blogs.map(Blog => (
                       <BlogItem key={Blog.id} Blog={Blog} />
                     ))}
-                  </Fragment>
+                  </div>
                 );
               }}
             </Query>
           </ul>
         </div>
-      </Fragment>
+      </div>
     );
   }
 }

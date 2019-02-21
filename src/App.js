@@ -8,7 +8,7 @@ import "./App.css";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 
 const client = new ApolloClient({
-  uri: "http://localhost:5000/graphql"
+  uri: "/graphql"
 });
 
 class App extends Component {

@@ -4,13 +4,20 @@
   "private": true,
   "dependencies": {
     "apollo-boost": "^0.1.27",
+    "apollo-cache-inmemory": "^1.4.3",
+    "apollo-link-http": "^1.5.11",
+    "apollo-server": "^2.4.2",
+    "apollo-server-express": "^2.4.2",
     "axios": "^0.18.0",
     "bootstrap": "^4.2.1",
     "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "dotenv-webpack": "^1.7.0",
     "express": "^4.16.4",
     "express-graphql": "^0.7.1",
     "graphql": "^14.1.1",
     "graphql-tag": "^2.10.1",
+    "path": "^0.12.7",
     "react": "^16.7.0",
     "react-apollo": "^2.4.1",
     "react-dom": "^16.7.0",
@@ -40,5 +47,6 @@
   },
   "resolutions": {
     "terser": "3.14.1"
-  }
+  },
+  "proxy": "http://localhost:3000"
 }
